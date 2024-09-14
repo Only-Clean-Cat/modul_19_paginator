@@ -15,4 +15,4 @@ def index_post(request):
     print(items_per_page)
     # print(page_number)
     # print(page_obj)
-    return render(request, 'index_post.html', {'page_obj': page_obj})
+    return render(request, 'index_post.html', {'page_obj': page_obj, 'items_per_page': int(items_per_page)})
